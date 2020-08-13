@@ -1,0 +1,6 @@
+framework module Pods_SwiftPoke_SwiftPokeUITests {
+  umbrella header "Pods-SwiftPoke-SwiftPokeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
