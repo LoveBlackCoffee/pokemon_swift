@@ -79,9 +79,7 @@ extension MainViewController: UICollectionViewDataSource {
     
     /// 縦のスペース
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
-
         return 0.0
-
     }
     
 }
@@ -90,6 +88,16 @@ extension MainViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if let cell = cell as? PokeCollectionViewCell, let model = self.pokemonList {
             cell.setupCell(model: model[indexPath.row])
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let model = self.pokemonList {
+            let storyboard = UIStoryboard(name: "PokeMonDetail", bundle: nil)
+            let nextView = storyboard.instantiateViewController(withIdentifier: "PokeMonDetailViewController") as! PokeMonDetailViewController
+            let data = model[indexPath.row]
+            nextView.config(data: data)
+            self.navigationController?.pushViewController(nextView, animated: true)
         }
     }
 }
