@@ -1,0 +1,8 @@
+app_identifier("jp.co.swiftPoke.SwiftPoke") # The bundle identifier of your app
+apple_id("m107020@gmail.com") # Your Apple email address
+
+itc_team_id("122164593") # App Store Connect Team ID
+team_id("842W8843D8") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

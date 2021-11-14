@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='SwiftPokeUITests.xctest' tests='4' failures='0'>
+  <testsuite name='SwiftPokeTests.SwiftPokeTests' tests='2' failures='0'>
+    <testcase classname='SwiftPokeTests.SwiftPokeTests' name='testExample' time='0.002'/>
+    <testcase classname='SwiftPokeTests.SwiftPokeTests' name='testPerformanceExample' time='0.260'/>
+  </testsuite>
+  <testsuite name='SwiftPokeUITests.SwiftPokeUITests' tests='2' failures='0'>
+    <testcase classname='SwiftPokeUITests.SwiftPokeUITests' name='testExample' time='3.913'/>
+    <testcase classname='SwiftPokeUITests.SwiftPokeUITests' name='testLaunchPerformance' time='95.499'/>
+  </testsuite>
+</testsuites>
